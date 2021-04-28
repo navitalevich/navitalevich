@@ -1,0 +1,5 @@
+ : [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.8)
+ : [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.8) [**\***](#* 'Required parameter')
+ : [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=netframework-4.8) [**\***](#* 'Required parameter')
+
+ : [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean?view=netframework-4.8) [**\***](#* 'Required parameter')
