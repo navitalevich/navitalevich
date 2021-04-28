@@ -237,7 +237,7 @@ Default value: AfterAction
 
 [Table of contents](#Сontent)
 
-Переводит текущий [process](/documentation/execution/regular-process/) в указанный [state](/documentation/workflowengine/#elements).
+Переводит указанный [process](/documentation/execution/regular-process/) в указанный [state](/documentation/workflowengine/#elements).
 
 **Параметры**
 
@@ -250,6 +250,10 @@ Default value: AfterAction
 Определеяет в какой момент выполнения будет установлен [state](/documentation/workflowengine/#elements). 
 
 Default value: AfterAction
+
+**`Process id`** : [Guid](https://docs.microsoft.com/en-us/dotnet/api/system.guid?view=netframework-4.8)
+
+Указывает, какой [process](/documentation/execution/regular-process/) должен перейти в указанный [state](/documentation/workflowengine/#elements), по умолчанию используется текущий [process](/documentation/execution/regular-process/).
 
 
 ### SetParameter
@@ -275,6 +279,22 @@ Default value: AfterAction
   Default value: false
 
   *Read about [subprocesses](/documentation/execution/subprocesses/).*
+
+### ExecuteCommand
+
+[Table of contents](#Сontent)
+
+Выполняет [command](/documentation/scheme/commands/) из указанного [process](/documentation/execution/regular-process/).
+
+**Параметры**
+
+**`Command name`** : [String](https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netframework-4.8) [**\***](#* 'Required parameter')
+
+Имя [command](/documentation/scheme/commands/), которая будет выполняться.
+
+**`Process id`** : [Guid](https://docs.microsoft.com/en-us/dotnet/api/system.guid?view=netframework-4.8)
+
+Указывает, из какого [process](/documentation/execution/regular-process/) будет выполнена указанная [command](/documentation/scheme/commands/), по умолчанию используется текущий [process](/documentation/execution/regular-process/).
 
 ### RemoveParameter
 
